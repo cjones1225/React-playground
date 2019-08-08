@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Component renders empty given no tabs 1`] = `<div />`;
+
+exports[`Tabs Component renders the first tab by default 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    First Tab
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Second Tab
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Third Tab
+  </button>
+  <div
+    className="content"
+  >
+    Lorem Ipsum dolor sit amet
+  </div>
+</div>
+`;

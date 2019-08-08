@@ -1,19 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
-import Messages from "./message/Messages";
-import TheDate from "./state/TheDate";
-import Counter from "./state/Counter/Counter";
+import Accordion from "./Accordion/Accordion";
 
+const sections = [
+  { title: "First Section", content: "Lorem Ipsum dolor sit amet" },
+  { title: "Second Section", content: "Laboriosam exercitationem" },
+  { title: "Third Section", content: "Fugit, sapiente aspernatur" }
+];
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>YOUR APPLICATION NAME!</h1>
-        <div>Hello!</div>
-        <TheDate />
-        <Messages name="Messages" unread={0} />
-        <Messages name="Notifications" unread={10} />
-        <Counter count={123} />
+        <h2>Accordion</h2>
+        <Accordion sections={sections} />
       </div>
     );
   }
